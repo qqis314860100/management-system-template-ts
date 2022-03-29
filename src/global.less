@@ -1,0 +1,67 @@
+html {
+  /* rem em */
+  /*em 相对于父元素的font-size*/
+  /*rem 相对于根元素html的font-size, r就是root的意思*/
+  /*16 * 62.5% = 10px*/
+  /*1rem === 10px*/
+  font-size: 62.5%;
+}
+
+/*viewport height === vh*/
+html body #root .App {
+  min-height: 100vh;
+}
+
+
+.logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.sider {
+  background: #fff;
+  min-height: calc(100vh - 64px);
+}
+
+.content {
+  background: #fff;
+  padding: 24px;
+  margin: 0;
+}
+
+.layout {
+  padding: 0 24px 24px;
+}
+
+.breadcrumb {
+  margin: 16px 0;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.ant-layout-sider-trigger {
+  color: #000;
+  background: transparent;
+  border-top: 1px solid rgb(240, 240, 240);
+  text-align: left;
+  padding: 0 24px;
+
+  &:hover {
+    color: #1890ff;
+  }
+}
